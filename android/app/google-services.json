@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "92267120805",
+    "project_id": "aprendendo-codigo",
+    "storage_bucket": "aprendendo-codigo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92267120805:android:25a20ccffd364c2c65654c",
+        "android_client_info": {
+          "package_name": "projeto.ifg.entendo_codigo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "92267120805-k3j2ae9h0vn5r3bmu9hga4l8nk6egdcs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIK_eukJW127_BP-rYw36ZFr4qBNdk85I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "92267120805-k3j2ae9h0vn5r3bmu9hga4l8nk6egdcs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
