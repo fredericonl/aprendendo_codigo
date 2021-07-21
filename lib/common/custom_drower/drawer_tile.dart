@@ -1,4 +1,6 @@
+import 'package:entendo_codigo/models/page_manager.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class DrawerTile extends StatelessWidget {
   const DrawerTile({
@@ -13,9 +15,11 @@ class DrawerTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Color primaryColor = Theme.of(context).primaryColor;
+
     return InkWell(
       onTap: () {
-        debugPrint('cliquei $page');
+        context.read<PageManager>().setPage(page);
       },
       child: SizedBox(
         height: 60,
@@ -26,13 +30,17 @@ class DrawerTile extends StatelessWidget {
               child: Icon(
                 iconData,
                 size: 32,
-                color: Colors.grey[700],
+                color: context.watch<PageManager>().page == page
+                    ? primaryColor
+                    : Colors.grey[700],
               ),
             ),
             Text(
               '$tile',
               style: TextStyle(
-                color: Colors.grey[700],
+                color: context.watch<PageManager>().page == page
+                    ? primaryColor
+                    : Colors.grey[700],
                 fontSize: 16,
               ),
             ),
